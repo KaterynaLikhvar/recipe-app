@@ -1,3 +1,3 @@
 <template>
-    lists
+    new
 </template>
