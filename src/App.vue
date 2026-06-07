@@ -5,7 +5,7 @@
 <template>
   <AppHeader />
 
-  <main class="app-main">
+  <main class="app-main wrapper">
     <RouterView />
   </main>
 </template>

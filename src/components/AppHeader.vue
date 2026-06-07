@@ -1,29 +1,34 @@
 <template>
   <header class="app-header">
-    <RouterLink to="/" class="app-header__logo">
-      <img src="@/assets/CookBook-horizontal.png" alt="CookBook logo" />
-    </RouterLink>
+    <div class="wrapper app-header__wrapper">
+      <RouterLink to="/" class="app-header__logo">
+        <img src="@/assets/CookBook-horizontal.png" alt="CookBook logo" />
+      </RouterLink>
 
-    <nav class="app-header__nav">
-      <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/lists">All Recipes</RouterLink>
-      <RouterLink to="/lists/new">Add recipe</RouterLink>
-    </nav>
+      <nav class="app-header__nav">
+        <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/lists">All Recipes</RouterLink>
+        <RouterLink to="/lists/new">Add recipe</RouterLink>
+      </nav>
+    </div>
   </header>
 </template>
+
 <style scoped lang="scss">
 .app-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-
   padding: 16px 32px;
   margin-bottom: 32px;
 
   background-color: #FCD9DB;
   border-bottom: 1px solid #ead8c0;
   box-shadow: 0 8px 24px rgba(92, 58, 33, 0.12);
+}
+
+.app-header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
 }
 
 .app-header__logo {
